@@ -74,4 +74,25 @@ Order(L).
 
 
 ------------------------
+Running parent program.
+------------------------
 
+?- consult('parent.pl').
+% parent.pl compiled 0.00 sec, 10 clauses
+true.
+
+?- parent(abraham,P).
+P = bob.
+
+?- grandparent(abraham,P).
+P = charles.
+
+?- predecessor(abraham,P).
+P = bob ;
+P = charles ;
+P = david ;
+P = ervin ;
+P = francis ;
+false.
+ 
+ ------------------------
