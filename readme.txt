@@ -1,5 +1,6 @@
 Reference : 
 http://www.inf.ed.ac.uk/teaching/courses/ar/ARPROLOG/stepbystep.pdf
+"AI Algorithms, Data Structures, and Idioms in Prolog, Lisp and Java - Chapter-2"
 
 
 1) Download and install swi-prolog
