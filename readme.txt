@@ -22,6 +22,12 @@ Try following commands in interpretter
 write('hello).
 write('hello'), nl, write('master').
 
+# Print current directory
+working_directory(CWD,CWD).
+
+# Change current directory
+working_directory(CWD, 'c:/mohan/work/prolog/').
+
 ---
 Loading file
 
