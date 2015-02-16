@@ -1,7 +1,11 @@
 Reference : 
+
 http://www.inf.ed.ac.uk/teaching/courses/ar/ARPROLOG/stepbystep.pdf
+
 "AI Algorithms, Data Structures, and Idioms in Prolog, Lisp and Java - Chapter-2"
 http://www.cs.unm.edu/~luger/ai-final2/CH2_Prolog%20-%20Representation.pdf
+
+https://sites.google.com/site/prologsite/prolog-problems/1
 
 
 1) Download and install swi-prolog
@@ -65,7 +69,6 @@ If the user just hits Enter, then Prolog stops looking for answers.
 
  
 ------------------------
-https://sites.google.com/site/prologsite/prolog-problems/1
 
 How to run appteizer program?
 ?- ['appetizer.pl'].

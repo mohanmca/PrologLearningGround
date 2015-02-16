@@ -1,0 +1,36 @@
+Deduction
+---------
+
+The main idea behind logic programming is that deduction (i.e. the construction of logical consequences) can be viewed as a form of computation, 
+and that the declarative statement of the form
+
+Prolog program define what is what? not how.
+
+P if Q and R and S
+
+can also be interpreted procedurally as:
+
+To solve P, solve Q and R and S.
+
+------------------------------------------------------
+
+A logic database is comprised of a set of facts and rules. Facts can define relations just as in relational databases.
+
+
+Queries can always be interpreted as goals: 
+Instead of asking "Is there an X such that parent(silvia,X) is true?"  
+we can also put it imperatively: "Try to find an X such that you can prove parent(silvia,X)!". 
+Therefore, we shall use the terms "query" and "goal" interchangeably.
+
+Facts and rules are collectively called Horn clauses, or clauses, for short. 
+It should be noted that a fact is just a special case of a rule, the case where n = 0. 
+If a relation is declared with more than one clause, these clauses are to be considered as alternatives.
+
+Prolog = Predicate Logic
+------------------------------------------------------
+
+Prolog - used in following problems
+1) Natural language processing
+2) Grammars (Programming language grammar)
+3) Theorem proving
+4) Expert System and AI.
