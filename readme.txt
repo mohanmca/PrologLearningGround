@@ -33,7 +33,7 @@ write('hello'), nl, write('master').
 working_directory(CWD,CWD).
 
 # Change current directory
-working_directory(CWD, 'c:/mohan/work/prolog/').
+working_directory(CWD, 'C:/Users/mohan/git/PrologLearningGround/src/').
 
 ---
 Loading file
@@ -99,4 +99,68 @@ P = ervin ;
 P = francis ;
 false.
  
- ------------------------
+--------------------------
+permutation(L,[1,2,3]).
+L = [1, 2, 3] ;
+L = [1, 3, 2] ;
+L = [2, 1, 3] ;
+L = [3, 1, 2] ;
+L = [2, 3, 1] ;
+L = [3, 2, 1] ;
+
+-------------------------
+ 
+ Solving puzzle using Prolog
+ 1) Adam does not live on the top floor.
+ 2) Bill does not live on the bottom floor.
+ 3) Cora does not live on either the top or the bottom floor.
+ 4) Dale lives on a higher floor than does Bill.
+ 5) Erin does not live on a floor adjacent to Cora's.
+ 6) Cora does not live on a floor adjacent to Bill's.
+ 
+ Solution.
+(begin with rought rules, and facts)
+[Top,Level4,Level3,Level2,Bottom]
+[adam,bill,cora,dale,erin]
+adam \== Top
+bill \== Bottom
+cora \== Top, cora \== Bottom
+higher(dale,bill,L)
+not_adjacent(erin,cora,L)
+not_adjacent(cora,bill,L)
+
+
+higher(X,Y,[X|T]):-	member(Y,T).
+higher(X,Y,[_|T]):-	higher(X,Y,T).
+
+not_adjacent(X,Y,[X,Z|T]):-	
+	Z \== Y, 
+	member(Y,T).
+
+not_adjacent(X,Y,[Y,Z|T]):-	
+	Z \== X, 
+	member(X,T).
+
+not_adjacent(X,Y,[_,T]):-	
+	not_adjacent(X,Y,T).
+
+permutation(L,[adam,bill,cora,dale,erin]).
+
+puzzle(L):-
+		permutation(L,[adam,bill,cora,dale,erin]),
+		L=[Top,Level4,Level3,Level2,Bottom],
+		adam \== Top,
+		bill \== Bottom,
+		cora \== Top, 
+		cora \== Bottom,
+		higher(dale,bill,L),
+		not_adjacent(erin,cora,L),
+		not_adjacent(cora,bill,L).
+		
+		
+		
+test for
+higher(adam, bill, [adam, bill, cora, dale, erin]).  
+higher(adam, cora, [adam, bill, cora, dale, erin]).  
+higher(dale, bill, [adam, bill, cora, dale, erin]).
+ 		
