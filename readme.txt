@@ -1,13 +1,4 @@
-Reference : 
-
-http://www.inf.ed.ac.uk/teaching/courses/ar/ARPROLOG/stepbystep.pdf
-
-"AI Algorithms, Data Structures, and Idioms in Prolog, Lisp and Java - Chapter-2"
-http://www.cs.unm.edu/~luger/ai-final2/CH2_Prolog%20-%20Representation.pdf
-
-https://sites.google.com/site/prologsite/prolog-problems/1
-
-http://www.thagomizer.com/files/prolog_cascadia_12.pdf
+#	Following notes about how to use swipl-win prolog interpreter on winows
 
 1) Download and install swi-prolog
 2) Execute swipl-win.exe (Windows interpretter)

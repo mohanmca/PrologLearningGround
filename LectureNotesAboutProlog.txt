@@ -1,9 +1,7 @@
 Deduction
 ---------
 
-The main idea behind logic programming is that deduction (i.e. the construction of logical consequences) can be viewed as a form of computation, 
-and that the declarative statement of the form
-
+The main idea behind logic programming is that deduction (i.e. the construction of logical consequences) can be viewed as a form of computation,  and that the declarative statement of the form
 Prolog program define what is what? not how.
 
 P if Q and R and S
@@ -34,3 +32,17 @@ Prolog - used in following problems
 2) Grammars (Programming language grammar)
 3) Theorem proving
 4) Expert System and AI.
+
+
+Reference : 
+------------------------------------------------------
+
+http://www.inf.ed.ac.uk/teaching/courses/ar/ARPROLOG/stepbystep.pdf
+
+"AI Algorithms, Data Structures, and Idioms in Prolog, Lisp and Java - Chapter-2"
+http://www.cs.unm.edu/~luger/ai-final2/CH2_Prolog%20-%20Representation.pdf
+
+https://sites.google.com/site/prologsite/prolog-problems/1
+
+http://www.thagomizer.com/files/prolog_cascadia_12.pdf
+
