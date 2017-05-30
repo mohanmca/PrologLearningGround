@@ -46,3 +46,4 @@ https://sites.google.com/site/prologsite/prolog-problems/1
 
 http://www.thagomizer.com/files/prolog_cascadia_12.pdf
 
+http://www.learnprolognow.org/lpnpage.php?pageid=teaching
